@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Paint Your Room – Master Painter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div id="ui">
+  <h2>Paint Your Room</h2>
+  <select id="roomSel">
+    <option value="bedroom">Bedroom</option>
+    <option value="living">Living Room</option>
+    <option value="kitchen">Kitchen</option>
+  </select>
+
+  <label>Brush size <input type="range" id="brushSize" min="10" max="100" value="40"></label>
+
+  <div id="palette"></div>
+
+  <button id="saveShot">Save Image</button>
+  <a href="index.html">← Back to Gallery</a>
+</div>
+
+<div id="canvas-container"></div>
+
+<script src="assets/js/three.min.js"></script>
+<script src="assets/js/paint-app.js"></script>
+</body>
+</html>
